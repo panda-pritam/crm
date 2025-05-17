@@ -2,7 +2,6 @@
 
 A Customer Relationship Management (CRM) system built with Node.js, Express, and PostgreSQL.
 
-
 ## Tech Stack
 
 - **Backend**: Node.js with Express
@@ -19,17 +18,20 @@ A Customer Relationship Management (CRM) system built with Node.js, Express, and
 ## Installation
 
 1. Clone the repository:
+
    ```
    git clone https://github.com/panda-pritam/crm.git
    cd crm
    ```
 
 2. Install dependencies:
+
    ```
    npm install
    ```
 
 3. Create a `.env` file in the root directory with the following variables:
+
    ```
    DATABASE_URL=postgres://username:password@localhost:5432/crm_db
    PORT=3000
@@ -45,11 +47,13 @@ A Customer Relationship Management (CRM) system built with Node.js, Express, and
 ## Running the Application
 
 Development mode with hot reloading:
+
 ```
 npm run dev
 ```
 
 Production mode:
+
 ```
 npm start
 ```
@@ -77,12 +81,20 @@ GET /api/leads - Get all leads
 GET /api/leads/:id - Get a specific lead
 
 POST /api/leads - Create a new lead
+body-
+{
+"name": "Pritam mondal",
+"email": "john@company.com",
+"company": "Acme Inc",
+"status": "new"
+}
 
 PUT /api/leads/:id - Update a lead
 
 DELETE /api/leads/:id - Delete a lead
 
 GET /api/leads/:id/score - Score a lead
+
 ## Contributing
 
 1. Fork the repository
@@ -94,6 +106,5 @@ GET /api/leads/:id/score - Score a lead
 ## License
 
 This project is licensed under the ISC License - see the LICENSE file for details.
-
 
 https://documenter.getpostman.com/view/22913290/2sB2qXj2nk
